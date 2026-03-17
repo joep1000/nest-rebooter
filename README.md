@@ -8,7 +8,7 @@ This python script uses the same Google cloud API the Google Home app uses to re
 
 ## The problem
 
-A lot of Google Nest WiFi and Google WiFi network users suffer from a well-known internet speed bug somewhere in the firmware of the Nest Wifi. For a lot of users, over the course of 1–3 days, speeds drop from near Gigabit speeds to very inconsistent speeds. The only fix seems to be either manually restarting the network or performing a Network Speed Test in the Google Home app. Google has known about this bug since at least [2021](https://www.googlenestcommunity.com/t5/Nest-Wifi/Scheduled-network-restart/m-p/58814) but has never added a scheduled restart feature, also because they have stopped all support for Nest/Google Wifi.
+A lot of Google Nest WiFi and Google WiFi network users suffer from a well-known internet speed bug somewhere in the firmware of the Nest Wifi. For a lot of users, over the course of 1–3 days, speeds drop from near Gigabit speeds (or whatever is the max speed allowed by their internet provider) to flcutating and inconsistent speeds. The only fix seems to be either manually restarting the network or performing a Network Speed Test in the Google Home app. Google has known about this bug since at least [2021 as per this nest community thread](https://www.googlenestcommunity.com/t5/Nest-Wifi/Scheduled-network-restart/m-p/58814) but has never added a scheduled restart feature. This is probably also because they have stopped all support for Nest/Google Wifi.
 
 This script aims to fix this bug by allowing you to restart your network remotely and automaticaly at any point in time from any (always-on) linux machine.
 
